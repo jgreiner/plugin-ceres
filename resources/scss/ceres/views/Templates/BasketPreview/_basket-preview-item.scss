@@ -98,6 +98,9 @@
 	
 
 	.item-remove{
+		position: absolute;
+	    bottom: 0;
+	    left:0;
 	    line-height: 1;
 	    cursor: pointer;					
 		color: $gray-lighter;

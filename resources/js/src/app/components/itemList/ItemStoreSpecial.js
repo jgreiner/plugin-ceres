@@ -12,37 +12,36 @@ Vue.component("item-store-special", {
         "decimalCount"
     ],
 
-    data()
+    data: function()
     {
         return {
-            localization  : {},
-            tagClass: "",
-            label: "",
-            tagClasses:
-            {
-                1: "bg-danger",
-                2: "bg-primary",
-                default: "bg-success"
-            }
+            tagClassPrefix: "bg-",
+            localization  : {}
         };
     },
 
-    created()
+    created: function()
     {
         ResourceService.bind("localization", this);
-
-        this.tagClass = this.tagClasses[this.storeSpecial.id] || this.tagClasses.default;
-        this.label = this.getLabel();
     },
 
     methods: {
-        getLabel()
+        getPercentageSale: function()
+        {
+            var percent = (1 - this.variationRetailPrice / this.recommendedRetailPrice) * -100;
+
+            return accounting.formatNumber(percent, this.decimalCount, "");
+        }
+    },
+
+    computed: {
+        label: function()
         {
             if (this.storeSpecial.id === 1)
             {
-                const percent = this.getPercentageSale();
+                var percent = this.getPercentageSale();
 
-                if (parseInt(percent) < 0)
+                if (percent <= 0)
                 {
                     return percent + "%";
                 }
@@ -51,11 +50,17 @@ Vue.component("item-store-special", {
             return this.storeSpecial.names.name;
         },
 
-        getPercentageSale()
+        tagClass: function()
         {
-            const percent = (1 - this.variationRetailPrice / this.recommendedRetailPrice) * -100;
-
-            return accounting.formatNumber(percent, this.decimalCount, "");
+            if (this.storeSpecial.id === 1)
+            {
+                return this.tagClassPrefix + "danger";
+            }
+            else if (this.storeSpecial.id === 2)
+            {
+                return this.tagClassPrefix + "primary";
+            }
+            return this.tagClassPrefix + "success";
         }
     }
 });

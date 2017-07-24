@@ -1,53 +1,10 @@
 # Release Notes für Ceres
 
-## v1.3.1 (2017-07-24)
-
-### Hinzugefügt
-
-- Das Custom-Event `onVariationChanged` wurde hinzugefügt.
-- Bestellmerkmale vom Typ **Text** können nun mit Artikeln verknüpft werden. Diese werden in der Einzelansicht eines Artikels angezeigt (Hinweis: Zurzeit stehen für die Verwendung im Webshop **Ceres** nur Bestellmerkmale vom Typ **Text** zur Verfügung. Auch die Einordnung von Bestellmerkmalen in Merkmalgruppen ist bisher nicht möglich). Weitere Informationen zur Einrichtung von Bestellmerkmalen finden Sie im [Handbuch](https://knowledge.plentymarkets.com/omni-channel/online-shop/ceres-einrichten#275) und im [Forum](https://forum.plentymarkets.com/t/howto-bestellmerkmale-in-ceres-einrichten/63155). 
-
-- Das Design für die Liste der Versandarten in der Kaufabwicklung wurde geändert.
-
-### Behoben
-
-- Wenn im Footer Kategorien verknüpft werden, werden diese nun sprachabhängig geladen.
-- Im **Mein Konto**-Bereich wird nun immer die E-Mail-Adresse des eingeloggten Shop-Besuchers angezeigt.
-
-### Bekannte Probleme
-
-- Artikelkategorien werden auch ohne verknüpfte Artikel im Webshop angezeigt.
-
-## v1.3.0 (2017-07-13)
-
-### Hinzugefügt
-
-- Die Artikellisten die Ceres bereitstellt, sind nun dynamisch und jede Liste kann frei gesetzt werden.
-- Artikel können nun mit Hilfe von Tags in Artikellisten dargestellt werden.
-- Cross-Selling-Artikel können nun in Artikellisten dargestellt werden (nur in der Einzelansicht eines Artikels verfügbar).
-- In den Adressformularen für die Lieferländer DE und UK wurde das Feld **Titel** hinzugefügt.
-- Für die Seitennavigation und die Navigation oben wurde Caching implementiert.
-- Es ist nun möglich, den Aufbau der Artikel-URLs analog zum alten Webshop (z.B. Callisto 3.5) anzupassen. Dafür muss die Einstellung **Enable Callisto route pattern for items** im Tab **Global** der Konfiguration von Ceres aktiviert werden.
+## v1.x.x (unknown)
 
 ### Geändert
 
-- Das Design des **In den Warenkorb**-Buttons in der Kategorieansicht wurde geändert.
-- Die Suche wird nun mit einer **UND**-Logik ausgeführt und ersetzt damit die vorherige **ODER**-Suche.
-- Das Icon für die Suche im Header ändert sich nun zu einem **X**, um dem Webshop-Besucher eindeutiger zu zeigen, wie man die Suche wieder schließt.
-- Die mobile Navigation wurde überarbeitet. Sie kann nun leichter bedient werden, da der Button zum Öffnen der Unterkategorien vergrößert wurde.
-- Das Addressfeld 2 wurde als Standardwert für das Adressformular des Lieferlandes UK hinzugefügt.
-- In der Zahlungsabwicklung wird standardmäßig die erste Adresse aus der Adressliste angezeigt.
-- In der Zahlungsabwicklung wird das Lieferland automatisch anhand der Lieferadresse gesetzt.
-- In der Zahlungsabwicklung kann man das Lieferland nicht mehr über das Menü im Header ändern.
-- Die Kategorieansicht wurde für mobile Geräte überarbeitet.
-
-### Behoben
-
-- Bei Artikeln werden nur noch die für den Mandanten aktivierten Bilder im Webshop angezeigt.
-- Die Seitennavigation zeigt nun wieder alle Kategorien sämtlicher Ebenen an.
-- In der Zahlungsabwicklung wird beim Wechseln der Lieferadresse nun automatisch die erste erlaubte Zahlungsart gewählt.
-- Der Name eines Artikels, der in der Kategorieansicht oder in einer Artikelliste angezeigt wird, wird nicht mehr nach 35 Zeichen abgeschnitten.
-
+- Das Suche Icon im Header ändert sich nun zu einem "x", um dem Benutzer eindeutiger zu zeigen wie man die Suche wieder schließt.
 
 ## v1.2.10 (2017-07-05)
 
@@ -69,6 +26,11 @@
 - Durch einen Fehler wurde bei automatischer Befüllung des Adressformulars (Browser muss Form Autofill unterstützen) die Hausnummer nicht in das richtige Feld eingetragen.
 - Es wurde ein Fehler in der Berechnung von Rabatten behoben.
 - Durch einen Formatierungsfehler im Karussell der Vorschaubilder wurde der Rand rechts abgeschnitten. Dies wurde behoben.
+
+### Bekannte Probleme
+
+- Der Name eines Artikels, der in der Kategorieansicht oder in einer Artikelliste angezeigt wird, wird nach 35 Zeichen abgeschnitten und nicht umgebrochen.
+- Artikelkategorien werden auch ohne verküpfte Artikel im Webshop angezeigt.
 
 ## v1.2.9 (2017-06-30)
 

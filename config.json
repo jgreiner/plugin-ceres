@@ -6,13 +6,6 @@
         "type"      : "category_select"
     },
     {
-        "tab"       : "Global",
-        "key"       : "global.enableOldUrlPattern",
-        "label"     : "Enable Callisto route pattern for items",
-        "type"      : "checkbox",
-        "default"   : "false"
-    },
-    {
         "tab"       : "Homepage",
         "key"       : "default.homepage",
         "label"     : "Show default homepage",
@@ -359,8 +352,8 @@
     },
     {
         "tab"               : "Item lists",
-        "key"               : "item.lists.last_seen_number",
-        "label"             : "Last seen: Number of last seen items",
+        "key"               : "item.lists.last_seen",
+        "label"             : "Number of last seen items",
         "type"              : "dropdown",
         "possibleValues"    :
         {
@@ -369,122 +362,6 @@
             "12"         : 12
         },
         "default"           : "4"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.cross_selling_type",
-        "label"             : "Cross-selling: Cross-selling relation",
-        "type"              : "dropdown",
-        "possibleValues"    :
-        {
-            "Similar"            : "Similar",
-            "Accessory"          : "Accessory",
-            "ReplacementPart"    : "Replacement part",
-            "Collection"         : "Collection"
-        },
-        "default"           : "Similar"
-    },
-    {
-        "tab"       : "Item lists",
-        "key"       : "item.lists.1.list_type",
-        "label"     : "First item list",
-        "type"      : "dropdown",
-        "possibleValues"    :
-        {
-            "last_seen"     : "Last seen",
-            "cross_selling" : "Cross-selling",
-            "tag_list"      : "Tags"
-        },
-        "default"           : "last_seen"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.1.de.list_name",
-        "label"             : "Name of the first item list (DE)",
-        "type"              : "text",
-        "default"           : "DE name"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.1.en.list_name",
-        "label"             : "Name of the first item list (EN)",
-        "type"              : "text",
-        "default"           : "EN name"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.1.tag_ids",
-        "label"             : "List of IDs of tags to display in the first item list",
-        "type"              : "text",
-        "default"           : "1,2,3"
-    },
-    {
-        "tab"       : "Item lists",
-        "key"       : "item.lists.2.list_type",
-        "label"     : "Second item list",
-        "type"      : "dropdown",
-        "possibleValues"    :
-        {
-            "last_seen"     : "Last seen",
-            "cross_selling" : "Cross-selling",
-            "tag_list"      : "Tags"
-        },
-        "default"           : "cross_selling"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.2.de.list_name",
-        "label"             : "Name of the second item list (DE)",
-        "type"              : "text",
-        "default"           : "DE name"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.2.en.list_name",
-        "label"             : "Name of the second item list (EN)",
-        "type"              : "text",
-        "default"           : "EN name"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.2.tag_ids",
-        "label"             : "List of IDs of tags to display in the second item list",
-        "type"              : "text",
-        "default"           : "1,2,3"
-    },
-    {
-        "tab"       : "Item lists",
-        "key"       : "item.lists.3.list_type",
-        "label"     : "Third item list",
-        "type"      : "dropdown",
-        "possibleValues"    :
-        {
-            "last_seen"     : "Last seen",
-            "cross_selling" : "Cross-selling",
-            "tag_list"      : "Tags"
-        },
-        "default"           : "tag_list"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.3.de.list_name",
-        "label"             : "Name of the third item list (DE)",
-        "type"              : "text",
-        "default"           : "DE name"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.3.en.list_name",
-        "label"             : "Name of the third item list (EN)",
-        "type"              : "text",
-        "default"           : "EN name"
-    },
-    {
-        "tab"               : "Item lists",
-        "key"               : "item.lists.3.tag_ids",
-        "label"             : "List of IDs of tags to display in the third item list",
-        "type"              : "text",
-        "default"           : "1,2,3"
     },
     {
         "tab"                           : "Shopping cart",
@@ -905,13 +782,6 @@
         "default"           : "5"
     },
     {
-        "tab"               : "Checkout and My account",
-        "key"               : "my_account.change_payment",
-        "label"             : "Allow customer to change the payment method",
-        "type"              : "checkbox",
-        "default"           : "true"
-    },
-    {
         "tab"                       : "Checkout and My account",
         "key"                       : "billing_address.show",
         "label"                     : "Show invoice address fields in address form (DE)",
@@ -920,13 +790,13 @@
         {
             "billing_address.name1"     : "Company",
             "billing_address.vatNumber" : "VAT number",
-            "billing_address.salutation": "Form of address",
-            "billing_address.title"     : "Title",
             "billing_address.birthday"  : "Date of birth",
             "billing_address.name4"     : "Name affix",
             "billing_address.address3"  : "Additional address 1",
             "billing_address.address4"  : "Additional address 2",
-            "billing_address.stateId"   : "State"
+            "billing_address.stateId"   : "State",
+            "billing_address.salutation": "Form of address",
+            "billing_address.title"     :"Title"
 
         },
         "default"                   : "billing_address.name1, billing_address.salutation"
@@ -940,13 +810,13 @@
         {
             "billing_address.name1"     : "Company",
             "billing_address.vatNumber" : "VAT number",
-            "billing_address.salutation": "Form of address",
-            "billing_address.title"     : "Title",
             "billing_address.birthday"  : "Date of birth",
             "billing_address.name4"     : "Name affix",
             "billing_address.address3"  : "Additional address 1",
             "billing_address.address4"  : "Additional address 2",
-            "billing_address.stateId"   : "State"
+            "billing_address.stateId"   : "State",
+            "billing_address.salutation": "Form of address",
+            "billing_address.title"     : "Title"
 
         },
         "default"                   : ""
@@ -959,12 +829,12 @@
       "possibleValues"            :
       {
         "delivery_address.name1"      : "Company",
-        "delivery_address.salutation" : "Form of address",
-        "delivery_address.title"      : "Title",
         "delivery_address.name4"      : "Name affix",
         "delivery_address.address3"   : "Additional address 1",
         "delivery_address.address4"   : "Additional address 2",
-        "delivery_address.stateId"    : "State"
+        "delivery_address.stateId"    : "State",
+        "delivery_address.salutation" : "Form of address",
+        "delivery_address.title"      : "Title"
 
       },
       "default"                   : "delivery_address.name1, delivery_address.salutation"
@@ -977,12 +847,12 @@
       "possibleValues"            :
       {
         "delivery_address.name1"      : "Company",
-        "delivery_address.salutation" : "Form of address",
-        "delivery_address.title"      : "Title",
         "delivery_address.name4"      : "Name affix",
         "delivery_address.address3"   : "Additional address 1",
         "delivery_address.address4"   : "Additional address 2",
-        "delivery_address.stateId"    : "State"
+        "delivery_address.stateId"    : "State",
+        "delivery_address.salutation" : "Form of address",
+        "delivery_address.title"      : "Title"
 
       },
       "default"                   : ""
@@ -996,16 +866,16 @@
       {
         "billing_address.name1"     : "Company",
         "billing_address.vatNumber" : "VAT number",
-        "billing_address.salutation": "Form of address",
-        "billing_address.title"     : "Title",
         "billing_address.birthday"  : "Date of birth",
         "billing_address.name4"     : "Name affix",
         "billing_address.address2"  : "Address 2",
         "billing_address.address3"  : "Address 3",
-        "billing_address.address4"  : "Address 4"
+        "billing_address.address4"  : "Address 4",
+        "billing_address.salutation": "Form of address",
+        "billing_address.title"     : "Title"
 
       },
-      "default"                   : "billing_address.name1, billing_address.address2, billing_address.salutation"
+      "default"                   : "billing_address.name1, billing_address.salutation"
     },
     {
       "tab"                       : "Checkout and My account",
@@ -1016,13 +886,13 @@
       {
         "billing_address.name1"     : "Company",
         "billing_address.vatNumber" : "VAT number",
-        "billing_address.salutation": "Form of address",
-        "billing_address.title"     : "Title",
         "billing_address.birthday"  : "Date of birth",
         "billing_address.name4"     : "Name affix",
         "billing_address.address2"  : "Address 2",
         "billing_address.address3"  : "Address 3",
-        "billing_address.address4"  : "Address 4"
+        "billing_address.address4"  : "Address 4",
+        "billing_address.salutation": "Form of address",
+        "billing_address.title"     : "Title"
 
       },
       "default"                   : ""
@@ -1035,12 +905,12 @@
       "possibleValues"            :
       {
         "delivery_address.name1"     : "Company",
-        "delivery_address.salutation": "Form of address",
-        "delivery_address.title"     : "Title",
         "delivery_address.name4"     : "Name affix",
         "delivery_address.address2"  : "Address 2",
         "delivery_address.address3"  : "Address 3",
-        "delivery_address.address4"  : "Address 4"
+        "delivery_address.address4"  : "Address 4",
+        "delivery_address.salutation": "Form of address",
+        "delivery_address.title"     : "Title"
 
       },
       "default"                   : "delivery_address.name1, delivery_address.salutation"
@@ -1053,12 +923,12 @@
       "possibleValues"            :
       {
         "delivery_address.name1"     : "Company",
-        "delivery_address.salutation": "Form of address",
-        "delivery_address.title"     : "Title",
         "delivery_address.name4"     : "Name affix",
         "delivery_address.address2"  : "Address 2",
         "delivery_address.address3"  : "Address 3",
-        "delivery_address.address4"  : "Address 4"
+        "delivery_address.address4"  : "Address 4",
+        "delivery_address.salutation": "Form of address",
+        "delivery_address.title"     : "Title"
 
       },
       "default"                   : ""

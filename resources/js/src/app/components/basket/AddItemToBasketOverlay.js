@@ -68,33 +68,9 @@ Vue.component("add-item-to-basket-overlay", {
         {
             if (this.basketItem.currentBasketItem.calculatedPrices)
             {
-                this.price = this.basketItem.currentBasketItem.calculatedPrices.default.price + this.calculateSurcharge();
+                this.price = this.basketItem.currentBasketItem.calculatedPrices.default.price;
                 this.currency = this.basketItem.currentBasketItem.calculatedPrices.default.currency;
             }
-        },
-
-        calculateSurcharge()
-        {
-
-            let sumSurcharge = 0;
-
-            for (const property of this.basketItem.currentBasketItem.properties)
-            {
-
-                if (property.property.value && property.property.value.length > 0)
-                {
-                    if (property.surcharge > 0)
-                    {
-                        sumSurcharge += property.surcharge;
-                    }
-                    else if (property.property.surcharge > 0)
-                    {
-                        sumSurcharge += property.property.surcharge;
-                    }
-                }
-            }
-
-            return sumSurcharge;
         },
 
         /**

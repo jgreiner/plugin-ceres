@@ -13,9 +13,7 @@
   "item.id",
   "images.all.url*",
   "images.all.position",
-  "images.all.path",
   "images.variation.position",
   "images.variation.urlPreview",
-  "images.variation.path",
   "properties.*"
 ]

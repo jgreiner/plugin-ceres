@@ -49,23 +49,11 @@
 					background:$brand-primary;
 					color: $white;
 				}
-
-				&.is-disabled{
-					cursor: not-allowed;
-
-					&:hover {
-						background:$gray-dark;
-					}
-				}
 			}
 
 			&.active{
 				a{
-					background-color:$brand-primary;
-
-					&.is-disabled{
-						background-color:$gray-dark;
-					}
+					background-color: $brand-primary;
 				}
 			}
 		}

@@ -1,0 +1,22 @@
+Remember that you can report errors and get help in https://github.com/NicoSantangelo/sublime-gulp
+
+05-30-2017 11:41:
+/Users/admin/Library/Application Support/Sublime Text 3/Packages/Gulp/write_tasks_to_cache.js:31
+        throw ex;
+        ^
+
+Error: Cannot find module 'q'
+    at Function.Module._resolveFilename (module.js:470:15)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/admin/Sites/kiom/.sublime-gulp-tmp.js:10:9)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+
+
+05-30-2017 11:44:
+(node:3698) DeprecationWarning: Calling an asynchronous function without callback is deprecated.
