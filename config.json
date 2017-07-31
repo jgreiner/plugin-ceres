@@ -795,8 +795,12 @@
             "billing_address.address3"  : "Additional address 1",
             "billing_address.address4"  : "Additional address 2",
             "billing_address.stateId"   : "State",
+<<<<<<< HEAD
             "billing_address.salutation": "Form of address",
             "billing_address.title"     :"Title"
+=======
+            "billing_address.phoneNumber" : "Phone number"
+>>>>>>> development
 
         },
         "default"                   : "billing_address.name1, billing_address.salutation"
@@ -815,8 +819,12 @@
             "billing_address.address3"  : "Additional address 1",
             "billing_address.address4"  : "Additional address 2",
             "billing_address.stateId"   : "State",
+<<<<<<< HEAD
             "billing_address.salutation": "Form of address",
             "billing_address.title"     : "Title"
+=======
+            "billing_address.phoneNumber" : "Phone number"
+>>>>>>> development
 
         },
         "default"                   : ""
@@ -833,8 +841,12 @@
         "delivery_address.address3"   : "Additional address 1",
         "delivery_address.address4"   : "Additional address 2",
         "delivery_address.stateId"    : "State",
+<<<<<<< HEAD
         "delivery_address.salutation" : "Form of address",
         "delivery_address.title"      : "Title"
+=======
+        "delivery_address.phoneNumber"  : "Phone number"
+>>>>>>> development
 
       },
       "default"                   : "delivery_address.name1, delivery_address.salutation"
@@ -851,8 +863,12 @@
         "delivery_address.address3"   : "Additional address 1",
         "delivery_address.address4"   : "Additional address 2",
         "delivery_address.stateId"    : "State",
+<<<<<<< HEAD
         "delivery_address.salutation" : "Form of address",
         "delivery_address.title"      : "Title"
+=======
+        "delivery_address.phoneNumber"  : "Phone number"
+>>>>>>> development
 
       },
       "default"                   : ""
@@ -871,8 +887,12 @@
         "billing_address.address2"  : "Address 2",
         "billing_address.address3"  : "Address 3",
         "billing_address.address4"  : "Address 4",
+<<<<<<< HEAD
         "billing_address.salutation": "Form of address",
         "billing_address.title"     : "Title"
+=======
+        "billing_address.phoneNumber" : "Phone number"
+>>>>>>> development
 
       },
       "default"                   : "billing_address.name1, billing_address.salutation"
@@ -891,8 +911,12 @@
         "billing_address.address2"  : "Address 2",
         "billing_address.address3"  : "Address 3",
         "billing_address.address4"  : "Address 4",
+<<<<<<< HEAD
         "billing_address.salutation": "Form of address",
         "billing_address.title"     : "Title"
+=======
+        "billing_address.phoneNumber" : "Phone number"
+>>>>>>> development
 
       },
       "default"                   : ""
@@ -909,8 +933,12 @@
         "delivery_address.address2"  : "Address 2",
         "delivery_address.address3"  : "Address 3",
         "delivery_address.address4"  : "Address 4",
+<<<<<<< HEAD
         "delivery_address.salutation": "Form of address",
         "delivery_address.title"     : "Title"
+=======
+        "delivery_address.phoneNumber"  : "Phone number"
+>>>>>>> development
 
       },
       "default"                   : "delivery_address.name1, delivery_address.salutation"
@@ -927,8 +955,12 @@
         "delivery_address.address2"  : "Address 2",
         "delivery_address.address3"  : "Address 3",
         "delivery_address.address4"  : "Address 4",
+<<<<<<< HEAD
         "delivery_address.salutation": "Form of address",
         "delivery_address.title"     : "Title"
+=======
+        "delivery_address.phoneNumber"  : "Phone number"
+>>>>>>> development
 
       },
       "default"                   : ""

@@ -13,7 +13,8 @@ Vue.component("add-to-basket", {
     data: function()
     {
         return {
-            quantity: 1
+            quantity: 1,
+            buttonLockState: false
         };
     },
 
@@ -46,6 +47,11 @@ Vue.component("add-to-basket", {
         directToItem: function()
         {
             window.location.assign(this.itemUrl);
+        },
+
+        handleButtonState(value)
+        {
+            this.buttonLockState = value;
         },
 
         /**

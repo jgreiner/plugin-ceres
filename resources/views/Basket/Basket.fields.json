@@ -8,12 +8,17 @@
   "variation.number",
   "variation.availability.names.*",
   "variation.itemId",
+  "variation.minimumOrderQuantity",
+  "variation.maximumOrderQuantity",
   "variation.id",
   "variation.data.orderProperties.*",
   "item.id",
   "images.all.url*",
   "images.all.position",
+  "images.all.path",
   "images.variation.position",
   "images.variation.urlPreview",
-  "properties.*"
+  "images.variation.path",
+  "properties.*",
+  "filter.isSalable"
 ]
