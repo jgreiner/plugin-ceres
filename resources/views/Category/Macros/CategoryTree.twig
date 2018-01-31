@@ -25,7 +25,6 @@
 {% endmacro %}
 
 {% macro get_nav_bar(categories, currentScopeUrl) %}
-    NAVBAR
     {% import _self as navbar %}
     {% set counter = 0 %}
     {% set megaMenuLevels = not config('Ceres.header.megamenu_levels') ? 1 : config('Ceres.header.megamenu_levels') %}
@@ -74,7 +73,6 @@
 {% endmacro %}
 
 {% macro get_sidemenu(breadcrumbs, categories, currentScopeUrl) %}
-    SIDEMENU
 
     {% import _self as sidemenu %}
 
