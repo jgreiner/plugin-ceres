@@ -22039,7 +22039,7 @@ var actions = {
         _ApiService2.default.listen("AfterBasketChanged", function (data) {
             commit("setBasket", data.basket);
             // commit("setBasketItems", data.basketItems);
-            console.log(data.basketItems);
+            // console.log(data.basketItems);
         });
     },
     addBasketNotification: function addBasketNotification(_ref4, _ref5) {

@@ -123,7 +123,7 @@ const actions =
 {
                 commit("setBasket", data.basket);
                 // commit("setBasketItems", data.basketItems);
-                console.log(data.basketItems);
+                // console.log(data.basketItems);
             });
         },
 
