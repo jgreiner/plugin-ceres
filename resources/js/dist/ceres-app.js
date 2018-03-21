@@ -22035,13 +22035,12 @@ var actions = {
         } else {
             commit("setIsBasketInitiallyLoaded");
         }
-        /*
-        ApiService.listen("AfterBasketChanged", data =>
-        {
-            commit("setBasket", data.basket);
-            commit("setBasketItems", data.basketItems);
+
+        _ApiService2.default.listen("AfterBasketChanged", function (data) {
+            // commit("setBasket", data.basket);
+            // commit("setBasketItems", data.basketItems);
+            console.log(data);
         });
-        */
     },
     addBasketNotification: function addBasketNotification(_ref4, _ref5) {
         var commit = _ref4.commit;

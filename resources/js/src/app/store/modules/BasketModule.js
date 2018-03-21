@@ -118,13 +118,13 @@ const actions =
             {
                 commit("setIsBasketInitiallyLoaded");
             }
-            /*
+
             ApiService.listen("AfterBasketChanged", data =>
 {
-                commit("setBasket", data.basket);
-                commit("setBasketItems", data.basketItems);
+                // commit("setBasket", data.basket);
+                // commit("setBasketItems", data.basketItems);
+                console.log(data);
             });
-            */
         },
 
         addBasketNotification({commit}, {type, message})
