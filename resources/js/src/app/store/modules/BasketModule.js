@@ -120,10 +120,9 @@ const actions =
             }
 
             ApiService.listen("AfterBasketChanged", data =>
-{
+            {
                 commit("setBasket", data.basket);
-                // commit("setBasketItems", data.basketItems);
-                // console.log(data.basketItems);
+                commit("setBasketItems", data.basketItems);
             });
         },
 
